@@ -62,7 +62,109 @@
                     </button>
                     <div class="backdrop is-hidden" data-modal>
                         <div class="modal">
-                            <button class="button-close" data-modal-close>x</button>
+                            <button
+                                class="button-close"
+                                type="button"
+                                data-modal-close
+                            >
+                                x
+                            </button>
+                            <h3>Zostaw swoje dane w formularzu poniżej</h3>
+                            <div class="modal-content">
+                                <form
+                                    class="modal-form"
+                                    name="contakt-form"
+                                    autocomplete="on"
+                                >
+                                    <label class="modal-form-box" for="name">
+                                        <span>Imię</span>
+                                        <svg
+                                            class="modal-form-icon"
+                                            width="18px"
+                                            height="18px"
+                                        >
+                                            <use
+                                                href="./images/icons.svg#icon-person-black-18dp-1"
+                                            ></use>
+                                        </svg>
+                                        <input
+                                            class="modal-form-input"
+                                            type="text"
+                                            name="client-name"
+                                            required
+                                        />
+                                    </label>
+
+                                    <label class="modal-form-box" for="name">
+                                        <span>Telefon</span>
+                                        <svg
+                                            class="modal-form-icon"
+                                            width="18px"
+                                            height="18px"
+                                        >
+                                            <use
+                                                href="./images/icons.svg#icon-phone-black-18dp-1"
+                                            ></use>
+                                        </svg>
+                                        <input
+                                            class="modal-form-input"
+                                            type="text"
+                                            name="client-name"
+                                            required
+                                        />
+                                    </label>
+
+                                    <label class="modal-form-box" for="name">
+                                        <span>E-mail</span>
+                                        <svg
+                                            class="modal-form-icon"
+                                            width="18px"
+                                            height="18px"
+                                        >
+                                            <use
+                                                href="./images/icons.svg#icon-email-black-18dp-1"
+                                            ></use>
+                                        </svg>
+                                        <input
+                                            class="modal-form-input"
+                                            type="text"
+                                            name="client-name"
+                                            required
+                                        />
+                                    </label>
+
+                                    <label class="modal-form-box" for="name">
+                                        <span>Komentarz</span>
+                                        <textarea
+                                            class="modal-form-input-text"
+                                            type="text"
+                                            name="client-comment"
+                                            placeholder="Wprowadź tekst"
+                                        ></textarea>
+                                    </label>
+                                    <div class="modal-form-checkbox">
+                                        <input
+                                            class="form-checkbox"
+                                            type="checkbox"
+                                            name="checkbox-accept"
+                                            required
+                                        />
+                                        <label class="form-checkbox-text">
+                                            <span>Oświadczam iż akceptuję
+                                            <a class="modal-form-link" href="#">Regulamin</a> i
+                                            <a class="modal-form-link" href="#"
+                                                >Politykę Prywatności.</a
+                                            ></span>
+                                        </label>
+                                    </div>
+                                        <button
+                                            class="modal-form-submit"
+                                            type="submit"
+                                        >
+                                            Wyślij
+                                        </button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -454,6 +556,26 @@
                             </svg>
                         </li>
                     </ul>
+                </div>
+                <div class="footer-form">
+                    <form>
+                        <label>
+                            <h5>ZAPISZ SIĘ DO NEWSLETTERA</h5>
+                            <input
+                                type="email"
+                                name="email-newsletter"
+                                placeholder="E-mail"
+                            />
+                        </label>
+                        <button class="newsletter-button" type="submit">
+                            Zapisz się
+                            <svg width="24px" height="24px">
+                                <use
+                                    href="images/icons.svg#icon-icon-send"
+                                ></use>
+                            </svg>
+                        </button>
+                    </form>
                 </div>
             </div>
         </footer>
